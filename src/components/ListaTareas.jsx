@@ -23,7 +23,12 @@ const tareaGuardada = (event)=> {
         setTareas(tareasNuevas);
 
       }
-      
+      function completarTarea(index) {
+        const tareasNuevas = tareas.slice();
+        tareasNuevas[index].completed = true;
+    
+        setTareas(tareasNuevas);
+      }
     return (
       
         <div className="container-fluid align-center text-center ">
